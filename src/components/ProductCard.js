@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import React from "react";
+import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 
 const ProductCard = ({ product, onPress }) => {
   return (
@@ -17,53 +17,55 @@ const ProductCard = ({ product, onPress }) => {
 };
 
 const styles = StyleSheet.create({
-  card: { 
-    backgroundColor: '#007BFF', 
-    padding: 15, 
-    margin: 10, 
-    borderRadius: 10, 
-    alignItems: 'center',
-    width: 170, 
-    overflow: 'hidden'
+  card: {
+    backgroundColor: "#F9FAFB",
+    borderBlockColor: "#E5E7EB",
+    borderBottomWidth: 4,
+    padding: 15,
+    margin: 10,
+    borderRadius: 10,
+    alignItems: "center",
+    width: 170,
+    overflow: "hidden",
   },
   imageContainer: {
     width: 140,
     height: 140,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#333', 
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "transparent",
     borderRadius: 5,
-    overflow: 'hidden'
+    overflow: "hidden",
   },
-  image: { 
-    width: '100%', 
-    height: '100%', 
-    resizeMode: 'contain' 
+  image: {
+    width: "100%",
+    height: "100%",
+    resizeMode: "contain",
   },
-  title: { 
-    color: '#fff', 
-    fontSize: 14, 
-    fontWeight: 600, 
+  title: {
+    color: "#111827",
+    fontSize: 14,
+    fontWeight: 600,
     marginVertical: 5,
-    textAlign: 'center' 
+    textAlign: "center",
   },
-  price: { 
-    color: 'lightgreen', 
-    fontSize: 14, 
-    fontWeight: 'bold'
+  price: {
+    color: "#10B981",
+    fontSize: 14,
+    fontWeight: "bold",
   },
-  button: { 
-    backgroundColor: '#FF9800', 
-    padding: 10, 
-    borderRadius: 5, 
-    marginTop: 10, 
-    width: '100%' 
+  button: {
+    backgroundColor: "#2563EB",
+    padding: 10,
+    borderRadius: 5,
+    marginTop: 10,
+    width: "100%",
   },
-  buttonText: { 
-    color: '#fff', 
-    fontWeight: 'bold', 
-    textAlign: 'center' 
-  }
+  buttonText: {
+    color: "#fff",
+    fontWeight: "bold",
+    textAlign: "center",
+  },
 });
 
 export default ProductCard;
